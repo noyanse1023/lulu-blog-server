@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <ul>
+<!-- banner -->
+    <% for(var i=0;i<banners.length;i++){ %>
+      <li>
+        <img src="../<%= banners[i].src %>" alt=""/>
+        <div class="text-box">
+          <h2><%= banners[i].title %></h2>
+          <p><%= banners[i].sub_title %></p>
+        </div>
+      </li>
+    <% } %>   
+  </ul>
+  </body>
+</html>
